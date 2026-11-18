@@ -4,10 +4,10 @@ import Image from "next/image";
 
 function Footer() {
   return (
-    <footer className="w-full bg-white text-black border-t border-gray-200 px-8 py-10">
+    <footer className="w-full bg-white text-black border-t border-gray-200 px-8 py-10 ">
 
       {/* Footer columns */}
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-3 gap-8 justify-items-center text-center">
 
         {/* Customer Care */}
         <div className="flex flex-col gap-3">

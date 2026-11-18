@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Search, ShoppingBasket, Heart } from "lucide-react";
+import { Search, ShoppingBasket, Mail } from "lucide-react";
+
 
 function Header() {
   return (
@@ -30,8 +31,8 @@ function Header() {
           </Link>
         </div>
 
-        {/* Right actions */}
-        <div className="flex items-center justify-end gap-5">
+        {/* Right navigation */}
+        <nav className="flex items-center justify-end gap-5">
 
           <button
             aria-label="Search"
@@ -40,19 +41,13 @@ function Header() {
             <Search size={20} strokeWidth={1.5} />
           </button>
 
-          <button
-            aria-label="Login or profile"
+          <Link
+            href="/contact"
+            aria-label="Contact Us"
             className="hover:opacity-50 transition-opacity"
           >
-            Profile
-          </button>
-
-          <button
-            aria-label="Wishlist"
-            className="hover:opacity-50 transition-opacity"
-          >
-            <Heart size={20} strokeWidth={1.5} />
-          </button>
+            <Mail size={20} strokeWidth={1.5} />
+          </Link>
 
           <Link
             href="/about"
@@ -69,11 +64,10 @@ function Header() {
             <ShoppingBasket size={20} strokeWidth={1.5} />
           </Link>
 
-        </div>
+        </nav>
       </div>
     </header>
   );
 }
 
 export default Header;
-
