@@ -37,7 +37,7 @@ export default function MenPage() {
 
     {/* Product Cards 2  */}
 <div className="text-black">
-  <Link href="/product/1" className="block no-underline text-black">
+  <Link href="/product/2" className="block no-underline text-black">
     <div className="overflow-hidden">
       <Image
         src="/images/mohamad-khosravi.jpg"
@@ -58,7 +58,7 @@ export default function MenPage() {
 
     {/* Product Cards 3  */}
 <div className="text-black">
-  <Link href="/product/1" className="block no-underline text-black">
+  <Link href="/product/3" className="block no-underline text-black">
     <div className="overflow-hidden">
       <Image
         src="/images/mohamad.jpg"
@@ -79,7 +79,7 @@ export default function MenPage() {
 
     {/* Product Cards 4  */}
 <div className="text-black">
-  <Link href="/product/1" className="block no-underline text-black">
+  <Link href="/product/4" className="block no-underline text-black">
     <div className="overflow-hidden">
       <Image
         src="/images/nicolas.jpg"
@@ -99,7 +99,7 @@ export default function MenPage() {
 
  {/* Product Cards 5  */}
  <div className="text-black">
-  <Link href="/product/1" className="block no-underline text-black">
+  <Link href="/product/5" className="block no-underline text-black">
     <div className="overflow-hidden">
       <Image
         src="/images/trouser.jpg"
@@ -120,7 +120,7 @@ export default function MenPage() {
 
  {/* Product Cards 6  */}
   <div className="text-black">
-  <Link href="/product/1" className="block no-underline text-black">
+  <Link href="/product/6" className="block no-underline text-black">
     <div className="overflow-hidden">
       <Image
         src="/images/vintage-hat.jpg"
@@ -140,7 +140,7 @@ export default function MenPage() {
 
 {/* Product Cards 7 */}
   <div className="text-black">
-  <Link href="/product/1" className="block no-underline text-black">
+  <Link href="/product/7" className="block no-underline text-black">
     <div className="overflow-hidden">
       <Image
         src="/images/brown-hat.jpg"
@@ -160,7 +160,7 @@ export default function MenPage() {
 
 {/* Product Cards 8 */}
  <div className="text-black">
-  <Link href="/product/1" className="block no-underline text-black">
+  <Link href="/product/8" className="block no-underline text-black">
     <div className="overflow-hidden">
       <Image
         src="/images/vintage-shirt.jpg"
@@ -180,7 +180,7 @@ export default function MenPage() {
 
 {/* Product Cards 9 */}
 <div className="text-black">
-  <Link href="/product/1" className="block no-underline text-black">
+  <Link href="/product/9" className="block no-underline text-black">
     <div className="overflow-hidden">
       <Image
         src="/images/vintage-braces.jpg"
@@ -200,7 +200,7 @@ export default function MenPage() {
 
 {/* Product Cards 10 */}
 <div className="text-black">
-  <Link href="/product/1" className="block no-underline text-black">
+  <Link href="/product/10" className="block no-underline text-black">
     <div className="overflow-hidden">
       <Image
         src="/images/vintage-coat.jpg"
@@ -221,7 +221,7 @@ export default function MenPage() {
 
 {/* Product Cards 11 */}
 <div className="text-black">
-  <Link href="/product/1" className="block no-underline text-black">
+  <Link href="/product/11" className="block no-underline text-black">
     <div className="overflow-hidden">
       <Image
         src="/images/retro-trouser.jpg"
@@ -242,7 +242,7 @@ export default function MenPage() {
 
 {/* Product Cards 12 */}
 <div className="text-black">
-  <Link href="/product/1" className="block no-underline text-black">
+  <Link href="/product/12" className="block no-underline text-black">
     <div className="overflow-hidden">
       <Image
         src="/images/retro-hat.jpg"

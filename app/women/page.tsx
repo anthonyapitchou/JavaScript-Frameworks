@@ -14,14 +14,14 @@ export default function WomenPage() {
   {/* Product Grid */}
   <section className="px-8">
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-      {/* Product Cards 1  */}
-
+      
+      {/* Product Cards 13  */}
 <div className="text-black">
-  <Link href="/product/1" className="block no-underline text-black">
+  <Link href="/product/13" className="block no-underline text-black">
     <div className="overflow-hidden">
       <Image
         src="/images/alex.jpg"
-        alt="Man wearing a vintage embroidered jacket"
+        alt="Man wearing a vintage embroidered shirt"
         width={500}
         height={650}
         className="w-full h-95 object-cover transition-transform duration-300 ease-in-out hover:scale-105"
@@ -29,19 +29,19 @@ export default function WomenPage() {
     </div>
 
     <div className="flex justify-between items-start mt-3">
-      <p className="text-sm text-black">Vintage embroidered jacket</p>
-      <p className="text-sm text-black whitespace-nowrap">2500 SEK</p>
+      <p className="text-sm text-black">Vintage embroidered shirt</p>
+      <p className="text-sm text-black whitespace-nowrap">1500 SEK</p>
     </div>
   </Link>
 </div>
 
-    {/* Product Cards 2  */}
+    {/* Product Cards 14  */}
 <div className="text-black">
-  <Link href="/product/1" className="block no-underline text-black">
+  <Link href="/product/14" className="block no-underline text-black">
     <div className="overflow-hidden">
       <Image
-        src="/images/asian-dress.jpg"
-        alt="Woman wearing a vintage asian dress "
+        src="/images/dress.jpg"
+        alt="Woman wearing a vintage  dress "
         width={500}
         height={650}
         className="w-full h-95 object-cover transition-transform duration-300 ease-in-out hover:scale-105"
@@ -56,9 +56,9 @@ export default function WomenPage() {
 </div>
 
 
-    {/* Product Cards 3  */}
+    {/* Product Cards 15  */}
 <div className="text-black">
-  <Link href="/product/1" className="block no-underline text-black">
+  <Link href="/product/15" className="block no-underline text-black">
     <div className="overflow-hidden">
       <Image
         src="/images/adrian.jpg"
@@ -77,9 +77,9 @@ export default function WomenPage() {
 </div>
 
 
-    {/* Product Cards 4  */}
+    {/* Product Cards 16  */}
 <div className="text-black">
-  <Link href="/product/1" className="block no-underline text-black">
+  <Link href="/product/16" className="block no-underline text-black">
     <div className="overflow-hidden">
       <Image
         src="/images/old-dress.jpg"
@@ -97,9 +97,9 @@ export default function WomenPage() {
   </Link>
 </div>
 
- {/* Product Cards 5  */}
+ {/* Product Cards 17  */}
  <div className="text-black">
-  <Link href="/product/1" className="block no-underline text-black">
+  <Link href="/product/17" className="block no-underline text-black">
     <div className="overflow-hidden">
       <Image
         src="/images/sunglasses-woman.jpg"
@@ -118,9 +118,9 @@ export default function WomenPage() {
 </div>
 
 
- {/* Product Cards 6  */}
+ {/* Product Cards 18  */}
   <div className="text-black">
-  <Link href="/product/1" className="block no-underline text-black">
+  <Link href="/product/18" className="block no-underline text-black">
     <div className="overflow-hidden">
       <Image
         src="/images/women-suit.jpg"
@@ -138,9 +138,9 @@ export default function WomenPage() {
   </Link>
 </div>
 
-{/* Product Cards 7 */}
+{/* Product Cards 19 */}
   <div className="text-black">
-  <Link href="/product/1" className="block no-underline text-black">
+  <Link href="/product/19" className="block no-underline text-black">
     <div className="overflow-hidden">
       <Image
         src="/images/women-vintage1.jpg"
@@ -158,9 +158,9 @@ export default function WomenPage() {
   </Link>
 </div>
 
-{/* Product Cards 8 */}
+{/* Product Cards 20 */}
  <div className="text-black">
-  <Link href="/product/1" className="block no-underline text-black">
+  <Link href="/product/20" className="block no-underline text-black">
     <div className="overflow-hidden">
       <Image
         src="/images/women-white-dress.jpg"
@@ -178,9 +178,9 @@ export default function WomenPage() {
   </Link>
 </div>
 
-{/* Product Cards 9 */}
+{/* Product Cards 21 */}
 <div className="text-black">
-  <Link href="/product/1" className="block no-underline text-black">
+  <Link href="/product/21" className="block no-underline text-black">
     <div className="overflow-hidden">
       <Image
         src="/images/color-dress.jpg"
@@ -198,9 +198,9 @@ export default function WomenPage() {
   </Link>
 </div>
 
-{/* Product Cards 10 */}
+{/* Product Cards 22 */}
 <div className="text-black">
-  <Link href="/product/1" className="block no-underline text-black">
+  <Link href="/product/22" className="block no-underline text-black">
     <div className="overflow-hidden">
       <Image
         src="/images/asian-dress.jpg"
@@ -219,9 +219,9 @@ export default function WomenPage() {
 </div>
 
 
-{/* Product Cards 11 */}
+{/* Product Cards 23 */}
 <div className="text-black">
-  <Link href="/product/1" className="block no-underline text-black">
+  <Link href="/product/23" className="block no-underline text-black">
     <div className="overflow-hidden">
       <Image
         src="/images/vintage-denim.jpg"
@@ -240,9 +240,9 @@ export default function WomenPage() {
 </div>
 
 
-{/* Product Cards 12 */}
+{/* Product Cards 24 */}
 <div className="text-black">
-  <Link href="/product/1" className="block no-underline text-black">
+  <Link href="/product/24" className="block no-underline text-black">
     <div className="overflow-hidden">
       <Image
         src="/images/white-sunglasses.jpg"

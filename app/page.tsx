@@ -93,7 +93,7 @@ export default function Home() {
 
     {/* Product Card 1 */}
     <div className="shrink-0 w-70 text-black">
-      <Link href="/product/1" className="block no-underline text-black">
+      <Link href="/product/" className="block no-underline text-black">
         <Image src="/images/adrian.jpg" alt="Woman wearing a vintage embroidered jacket" width={500} height={650} className="w-full h-95 object-cover transition-transform duration-300 ease-in-out hover:scale-105" />
         <div className="flex justify-between items-start mt-3">
           <p className="text-sm text-black">Vintage embroidered jacket</p>
@@ -104,7 +104,7 @@ export default function Home() {
 
     {/* Product Card 2 */}
     <div className="shrink-0 w-70 text-black">
-      <Link href="/product/2" className="block no-underline text-black">
+      <Link href="/product/" className="block no-underline text-black">
         <Image src="/images/alex.jpg" alt="Woman wearing a vintage patterned top" width={500} height={650} className="w-full h-95 object-cover transition-transform duration-300 ease-in-out hover:scale-105" />
         <div className="flex justify-between items-start mt-3">
           <p className="text-sm text-black">Vintage patterned top</p>
@@ -115,7 +115,7 @@ export default function Home() {
 
     {/* Product Card 3 */}
     <div className="shrink-0 w-70 text-black">
-      <Link href="/product/3" className="block no-underline text-black">
+      <Link href="/product/1" className="block no-underline text-black">
         <Image src="/images/beige-jacket.jpg" alt="Man wearing a beige vintage jacket" width={500} height={650} className="w-full h-95 object-cover transition-transform duration-300 ease-in-out hover:scale-105" />
         <div className="flex justify-between items-start mt-3">
           <p className="text-sm text-black">Beige vintage jacket</p>
@@ -126,7 +126,7 @@ export default function Home() {
 
     {/* Product Card 4 */}
     <div className="shrink-0 w-70 text-black">
-      <Link href="/product/4" className="block no-underline text-black">
+      <Link href="/product/" className="block no-underline text-black">
         <Image src="/images/blue-dress.jpg" alt="Woman wearing a blue vintage dress" width={500} height={650} className="w-full h-95 object-cover transition-transform duration-300 ease-in-out hover:scale-105" />
         <div className="flex justify-between items-start mt-3">
           <p className="text-sm text-black">Blue vintage dress</p>
@@ -137,7 +137,7 @@ export default function Home() {
 
     {/* Product Card 5 */}
     <div className="shrink-0 w-70 text-black">
-      <Link href="/product/5" className="block no-underline text-black">
+      <Link href="/product/" className="block no-underline text-black">
         <Image src="/images/dress.jpg" alt="Woman wearing a vintage dress" width={500} height={650} className="w-full h-95 object-cover transition-transform duration-300 ease-in-out hover:scale-105" />
         <div className="flex justify-between items-start mt-3">
           <p className="text-sm text-black">Blue vintage dress</p>
@@ -148,7 +148,7 @@ export default function Home() {
 
     {/* Product Card 6 */}
     <div className="shrink-0 w-70 text-black">
-      <Link href="/product/6" className="block no-underline text-black">
+      <Link href="/product/2" className="block no-underline text-black">
         <Image src="/images/mohamad-khosravi.jpg" alt="Man wearing a vintage suit" width={500} height={650} className="w-full h-95 object-cover transition-transform duration-300 ease-in-out hover:scale-105" />
         <div className="flex justify-between items-start mt-3">
           <p className="text-sm text-black">Vintage suit</p>
@@ -159,7 +159,7 @@ export default function Home() {
 
     {/* Product Card 7 */}
     <div className="shrink-0 w-70 text-black">
-      <Link href="/product/7" className="block no-underline text-black">
+      <Link href="/product/3" className="block no-underline text-black">
         <Image src="/images/mohamad.jpg" alt="Man wearing a vintage suit" width={500} height={650} className="w-full h-95 object-cover transition-transform duration-300 ease-in-out hover:scale-105" />
         <div className="flex justify-between items-start mt-3">
           <p className="text-sm text-black">Vintage suit</p>

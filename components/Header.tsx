@@ -10,10 +10,10 @@ function Header() {
 
         {/* Left navigation */}
         <nav className="flex items-center gap-6">
-          <Link href="/" className="hover:opacity-50 transition-opacity">
+          <Link href="/women" className="hover:opacity-50 transition-opacity">
             Women
           </Link>
-          <Link href="/" className="hover:opacity-50 transition-opacity">
+          <Link href="/men" className="hover:opacity-50 transition-opacity">
             Men
           </Link>
         </nav>
