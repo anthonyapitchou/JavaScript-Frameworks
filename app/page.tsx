@@ -2,15 +2,27 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { useRef } from "react";
-
+import { useRef, useState, useEffect } from "react";
+import { getProducts, type Product } from "./lib/api";
 
 export default function Home() {
   const productListRef = useRef<HTMLDivElement>(null);
+  const [products, setProducts] = useState<Product[]>([]);
+const [search, setSearch] = useState("");
+
+useEffect(() => {
+  getProducts()
+    .then(setProducts)
+    .catch((error) => console.error("API error:", error));
+}, []);
+
+const filteredProducts = products.filter((product) =>
+  product.title.toLowerCase().includes(search.toLowerCase())
+);
+  
   return (
     <main className="min-h-screen bg-white">
 
-      {/* Hero Section */}
 {/* Hero Section */}
 <section className="relative w-full   h-162.5">
 
@@ -61,6 +73,9 @@ export default function Home() {
 
 </section>
 
+
+
+
 {/* Shopping Card */}
 
 <section className="w-full px-8">
@@ -93,7 +108,7 @@ export default function Home() {
 
     {/* Product Card 1 */}
     <div className="shrink-0 w-70 text-black">
-      <Link href="/product/" className="block no-underline text-black">
+      <Link href="/product/15" className="block no-underline text-black">
         <Image src="/images/adrian.jpg" alt="Woman wearing a vintage embroidered jacket" width={500} height={650} className="w-full h-95 object-cover transition-transform duration-300 ease-in-out hover:scale-105" />
         <div className="flex justify-between items-start mt-3">
           <p className="text-sm text-black">Vintage embroidered jacket</p>
@@ -104,7 +119,7 @@ export default function Home() {
 
     {/* Product Card 2 */}
     <div className="shrink-0 w-70 text-black">
-      <Link href="/product/" className="block no-underline text-black">
+      <Link href="/product/13" className="block no-underline text-black">
         <Image src="/images/alex.jpg" alt="Woman wearing a vintage patterned top" width={500} height={650} className="w-full h-95 object-cover transition-transform duration-300 ease-in-out hover:scale-105" />
         <div className="flex justify-between items-start mt-3">
           <p className="text-sm text-black">Vintage patterned top</p>
@@ -126,11 +141,11 @@ export default function Home() {
 
     {/* Product Card 4 */}
     <div className="shrink-0 w-70 text-black">
-      <Link href="/product/" className="block no-underline text-black">
-        <Image src="/images/blue-dress.jpg" alt="Woman wearing a blue vintage dress" width={500} height={650} className="w-full h-95 object-cover transition-transform duration-300 ease-in-out hover:scale-105" />
+      <Link href="/product/19" className="block no-underline text-black">
+        <Image src="/images/women-vintage1.jpg" alt="Woman wearing a vintage shirt" width={500} height={650} className="w-full h-95 object-cover transition-transform duration-300 ease-in-out hover:scale-105" />
         <div className="flex justify-between items-start mt-3">
-          <p className="text-sm text-black">Blue vintage dress</p>
-          <p className="text-sm text-black whitespace-nowrap">1500 SEK</p>
+          <p className="text-sm text-black">Vintage shirt</p>
+          <p className="text-sm text-black whitespace-nowrap">1000 SEK</p>
         </div>
       </Link>
     </div>

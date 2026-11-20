@@ -1,9 +1,20 @@
+
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Search, ShoppingBasket, Mail } from "lucide-react";
+import { useCart } from "../app/cart/CartContext";
 
 
 function Header() {
+  const { cart } = useCart();
+
+  const cartCount = cart.reduce(
+    (total, item) => total + item.quantity,
+    0
+  );
+
   return (
     <header className="w-full bg-white text-black">
       <div className="grid grid-cols-3 items-center px-8 py-5">
@@ -33,13 +44,13 @@ function Header() {
 
         {/* Right navigation */}
         <nav className="flex items-center justify-end gap-5">
-
-          <button
+          <Link
+            href="/search"
             aria-label="Search"
             className="hover:opacity-50 transition-opacity"
           >
             <Search size={20} strokeWidth={1.5} />
-          </button>
+          </Link>
 
           <Link
             href="/contact"
@@ -58,12 +69,17 @@ function Header() {
 
           <Link
             href="/cart"
-            aria-label="Basket"
-            className="hover:opacity-50 transition-opacity"
+            aria-label={`Basket, ${cartCount} items`}
+            className="relative hover:opacity-50 transition-opacity"
           >
             <ShoppingBasket size={20} strokeWidth={1.5} />
-          </Link>
 
+            {cartCount > 0 && (
+              <span className="absolute -top-2 -right-3 flex h-5 w-5 items-center justify-center rounded-full bg-blue-500 text-xs text-white">
+                {cartCount}
+              </span>
+            )}
+          </Link>
         </nav>
       </div>
     </header>

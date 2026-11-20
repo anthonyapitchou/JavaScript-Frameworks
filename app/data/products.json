@@ -1,0 +1,544 @@
+
+[
+  {
+    "id": "1",
+    "title": "Vintage Beige Jacket",
+    "description": "A timeless vintage jacket featuring a relaxed silhouette and a warm beige tone. Carefully selected for its unique character, this piece brings effortless style to any wardrobe.",
+    "price": 2500,
+    "discountedPrice": 2500,
+    "image": {
+      "url": "/images/beige-jacket.jpg",
+      "alt": "Man wearing a beige jacket"
+    },
+    "rating": 0,
+    "tags": ["men", "jacket", "vintage"],
+    "reviews": []
+  },
+  {
+    "id": "2",
+    "title": "Vintage Suit",
+    "description": "A timeless vintage suit featuring a refined double-breasted jacket, a textured dark fabric and a tailored silhouette. Paired with a classic shirt and tie, this elegant piece brings a touch of sophistication and character to any wardrobe.",
+    "price": 3200,
+    "discountedPrice": 3200,
+    "image": {
+      "url": "/images/mohamad-khosravi.jpg",
+      "alt": "Man wearing a vintage suit"
+    },
+    "rating": 0,
+    "tags": [
+      "men",
+      "suit",
+      "vintage",
+      "double-breasted",
+      "Vintage two-piece suit",
+      "Double-breasted jacket",
+      "Size M",
+      "Unique vintage character"
+    ],
+    "reviews": []
+  },
+  {
+    "id": "3",
+    "title": "Vintage Blue Suit",
+    "description": "A sophisticated vintage blue suit featuring a tailored three-piece design with a matching jacket, waistcoat and trousers. Its refined silhouette, classic details and timeless blue tone make it a distinctive piece for any elegant wardrobe.",
+    "price": 3200,
+    "discountedPrice": 3200,
+    "image": {
+      "url": "/images/mohamad.jpg",
+      "alt": "Man wearing a vintage blue suit"
+    },
+    "rating": 0,
+    "tags": [
+      "men",
+      "suit",
+      "vintage",
+      "blue",
+      "three-piece",
+      "Vintage three-piece suit",
+      "Matching jacket, waistcoat and trousers",
+      "Size M",
+      "Classic tailored fit"
+    ],
+    "reviews": []
+  },
+  {
+    "id": "4",
+    "title": "Vintage Colored Suit",
+    "description": "A distinctive vintage suit featuring a bold combination of earthy tones and colourful plaid patterns. Paired with a classic hat and a patterned shirt, this unique look blends retro charm with individual style. A statement piece for those who appreciate timeless vintage fashion.",
+    "price": 3200,
+    "discountedPrice": 3200,
+    "image": {
+      "url": "/images/nicolas.jpg",
+      "alt": "Man wearing a vintage colored suit"
+    },
+    "rating": 0,
+    "tags": [
+      "men",
+      "suit",
+      "vintage",
+      "plaid",
+      "colourful",
+      "Vintage three-piece suit",
+      "Earthy green and red tones",
+      "Size M",
+      "Colourful plaid pattern"
+    ],
+    "reviews": []
+  },
+  {
+    "id": "5",
+    "title": "Vintage High-Waisted Trouser",
+    "description": "A timeless vintage look featuring classic high-waisted trousers paired with a crisp white shirt and suspenders. The relaxed yet refined silhouette and dark tailored fabric create an elegant retro style inspired by traditional menswear.",
+    "price": 1200,
+    "discountedPrice": 1200,
+    "image": {
+      "url": "/images/trouser.jpg",
+      "alt": "Man wearing vintage coloured trousers"
+    },
+    "rating": 0,
+    "tags": [
+      "men",
+      "trousers",
+      "vintage",
+      "high-waisted",
+      "Vintage tailored trousers",
+      "High-waisted design",
+      "Size M",
+      "Dark charcoal tone"
+    ],
+    "reviews": []
+  },
+  {
+    "id": "6",
+    "title": "Vintage Hat",
+    "description": "A timeless vintage flat cap featuring a classic dark check pattern and a refined silhouette. Its understated design and textured fabric bring a touch of old-school elegance to any outfit. A distinctive accessory for those who appreciate traditional vintage style.",
+    "price": 2500,
+    "discountedPrice": 2500,
+    "image": {
+      "url": "/images/vintage-hat.jpg",
+      "alt": "Man wearing a vintage hat"
+    },
+    "rating": 0,
+    "tags": [
+      "men",
+      "hat",
+      "accessory",
+      "vintage",
+      "flat cap",
+      "Vintage flat cap",
+      "Dark check pattern",
+      "Size 59",
+      "Textured fabric"
+    ],
+    "reviews": []
+  },
+  {
+    "id": "7",
+    "title": "Vintage Hat",
+    "description": "A timeless vintage flat cap featuring a classic brown design. Its elegant style and textured fabric bring a touch of old-school charm to any outfit. A distinctive accessory for those who appreciate traditional vintage style.",
+    "price": 2500,
+    "discountedPrice": 2500,
+    "image": {
+      "url": "/images/brown-hat.jpg",
+      "alt": "Man wearing a vintage hat"
+    },
+    "rating": 0,
+    "tags": [
+      "men",
+      "hat",
+      "accessory",
+      "vintage",
+      "flat cap",
+      "brown",
+      "Vintage flat cap",
+      "Elegant classic pattern",
+      "Size 59",
+      "Textured fabric"
+    ],
+    "reviews": []
+  },
+  {
+    "id": "8",
+    "title": "Vintage Shirt",
+    "description": "A distinctive vintage shirt featuring an eye-catching golden chain and baroque-inspired pattern against a dark background. Its bold design adds character and personality to any outfit, blending retro elegance with a touch of luxury.",
+    "price": 1200,
+    "discountedPrice": 1200,
+    "image": {
+      "url": "/images/vintage-shirt.jpg",
+      "alt": "Man wearing a vintage shirt"
+    },
+    "rating": 0,
+    "tags": [
+      "men",
+      "shirt",
+      "vintage",
+      "patterned",
+      "Golden chain-inspired print",
+      "Size L",
+      "Black and gold colour combination"
+    ],
+    "reviews": []
+  },
+  {
+    "id": "9",
+    "title": "Vintage Braces",
+    "description": "A timeless vintage look featuring classic suspenders paired with a crisp white shirt and tailored dark trousers. The relaxed styling and understated details create an effortlessly elegant look inspired by traditional menswear.",
+    "price": 700,
+    "discountedPrice": 700,
+    "image": {
+      "url": "/images/vintage-braces.jpg",
+      "alt": "Man wearing vintage braces"
+    },
+    "rating": 0,
+    "tags": [
+      "men",
+      "braces",
+      "suspenders",
+      "vintage",
+      "adjustable design",
+      "Size L",
+      "retro style"
+    ],
+    "reviews": []
+  },
+  {
+    "id": "10",
+    "title": "Vintage Coat",
+    "description": "A sophisticated vintage coat featuring a deep olive-green tone, a double-breasted design and elegant gold buttons. Its long silhouette and structured shape bring a refined touch to any wardrobe, combining classic tailoring with timeless character.",
+    "price": 3500,
+    "discountedPrice": 3500,
+    "image": {
+      "url": "/images/vintage-coat.jpg",
+      "alt": "Man wearing a vintage coat"
+    },
+    "rating": 0,
+    "tags": [
+      "men",
+      "coat",
+      "vintage",
+      "olive green",
+      "double-breasted",
+      "gold buttons",
+      "Size L",
+      "retro style"
+    ],
+    "reviews": []
+  },
+  {
+    "id": "11",
+    "title": "Retro Trouser",
+    "description": "A relaxed vintage style featuring high-waisted beige trousers with a subtle striped pattern. Paired with a classic white shirt and suspenders, these trousers bring a touch of effortless retro charm to everyday dressing.",
+    "price": 1500,
+    "discountedPrice": 1500,
+    "image": {
+      "url": "/images/retro-trouser.jpg",
+      "alt": "Man wearing retro trousers"
+    },
+    "rating": 0,
+    "tags": [
+      "men",
+      "trousers",
+      "retro",
+      "vintage",
+      "high-waisted",
+      "beige",
+      "striped pattern",
+      "Size 32"
+    ],
+    "reviews": []
+  },
+  {
+    "id": "12",
+    "title": "Vintage Hat",
+    "description": "A distinctive vintage flat cap featuring a classic dark design and timeless silhouette. Inspired by traditional menswear, this understated accessory adds character and old-school charm to any outfit.",
+    "price": 1500,
+    "discountedPrice": 1500,
+    "image": {
+      "url": "/images/retro-hat.jpg",
+      "alt": "Man wearing a retro hat"
+    },
+    "rating": 0,
+    "tags": [
+      "men",
+      "hat",
+      "vintage",
+      "retro",
+      "classic retro design",
+      "Size 59",
+      "timeless accessory"
+    ],
+    "reviews": []
+  },
+  {
+    "id": "13",
+    "title": "Vintage Shirt",
+    "description": "A charming vintage embroidered piece featuring a sleeveless design, delicate patterns and a feminine cropped silhouette. Its warm brown tones and decorative details bring a playful retro touch to any outfit.",
+    "price": 1500,
+    "discountedPrice": 1500,
+    "image": {
+      "url": "/images/alex.jpg",
+      "alt": "Woman wearing a vintage embroidered shirt"
+    },
+    "rating": 0,
+    "tags": [
+      "women",
+      "shirt",
+      "vintage",
+      "embroidered",
+      "sleeveless",
+      "cropped silhouette",
+      "brown",
+      "retro 70s",
+      "Size M"
+    ],
+    "reviews": []
+  },
+  {
+    "id": "14",
+    "title": "Vintage Dress",
+    "description": "A beautiful vintage dress featuring a vibrant coral-red colour and delicate traditional details. Its flowing silhouette and elegant draping create a timeless look with a distinctive retro character.",
+    "price": 1200,
+    "discountedPrice": 1200,
+    "image": {
+      "url": "/images/dress.jpg",
+      "alt": "Woman wearing a vintage dress"
+    },
+    "rating": 0,
+    "tags": [
+      "women",
+      "dress",
+      "vintage",
+      "coral-red",
+      "Size M",
+      "decorative embroidered details"
+    ],
+    "reviews": []
+  },
+  {
+    "id": "15",
+    "title": "Vintage Jacket",
+    "description": "A statement vintage jacket featuring a delicate cream fabric decorated with dark floral lace, ornamental details and distinctive patches. Its unique combination of textures and patterns creates an elegant yet unconventional vintage look.",
+    "price": 3500,
+    "discountedPrice": 3500,
+    "image": {
+      "url": "/images/adrian.jpg",
+      "alt": "Woman wearing a vintage jacket"
+    },
+    "rating": 0,
+    "tags": [
+      "women",
+      "jacket",
+      "vintage",
+      "decorative patches",
+      "embellishments",
+      "Size M",
+      "cream",
+      "dark navy"
+    ],
+    "reviews": []
+  },
+  {
+    "id": "16",
+    "title": "Vintage Dress",
+    "description": "An elegant vintage brown ensemble featuring a structured tailored jacket and a matching midi skirt. Its rich earthy tone and refined silhouette create a sophisticated look inspired by classic vintage fashion.",
+    "price": 2500,
+    "discountedPrice": 2500,
+    "image": {
+      "url": "/images/old-dress.jpg",
+      "alt": "Woman wearing a vintage dress"
+    },
+    "rating": 0,
+    "tags": [
+      "women",
+      "dress",
+      "vintage",
+      "two-piece ensemble",
+      "matching jacket",
+      "midi skirt",
+      "Size S",
+      "structured tailored silhouette"
+    ],
+    "reviews": []
+  },
+  {
+    "id": "17",
+    "title": "Vintage Sunglasses",
+    "description": "A bold vintage accessory featuring oversized sunglasses with warm-toned lenses and a distinctive frame. Paired with a colourful patterned silk scarf, this look brings a touch of retro glamour and effortless sophistication.",
+    "price": 1200,
+    "discountedPrice": 1200,
+    "image": {
+      "url": "/images/sunglasses-woman.jpg",
+      "alt": "Woman wearing vintage sunglasses"
+    },
+    "rating": 0,
+    "tags": [
+      "women",
+      "sunglasses",
+      "vintage",
+      "oversized",
+      "warm-toned lenses",
+      "unisex",
+      "retro-inspired design"
+    ],
+    "reviews": []
+  },
+  {
+    "id": "18",
+    "title": "Vintage Suit",
+    "description": "An elegant vintage women's suit featuring a structured long coat with a matching tailored silhouette. Its timeless design, refined details and classic cut capture the sophistication of traditional vintage fashion.",
+    "price": 3200,
+    "discountedPrice": 3200,
+    "image": {
+      "url": "/images/women-suit.jpg",
+      "alt": "Woman wearing a vintage suit"
+    },
+    "rating": 0,
+    "tags": [
+      "women",
+      "suit",
+      "vintage",
+      "tailored",
+      "structured long jacket",
+      "Size M",
+      "refined feminine silhouette"
+    ],
+    "reviews": []
+  },
+  {
+    "id": "19",
+    "title": "Vintage Shirt",
+    "description": "A playful vintage shirt featuring a light fabric decorated with a colourful polka-dot pattern. Its relaxed cropped silhouette and front-tie detail create a fresh retro look, perfect for adding personality to everyday outfits.",
+    "price": 1000,
+    "discountedPrice": 1000,
+    "image": {
+      "url": "/images/women-vintage1.jpg",
+      "alt": "Woman wearing a vintage shirt"
+    },
+    "rating": 0,
+    "tags": [
+      "women",
+      "shirt",
+      "vintage",
+      "short-sleeved",
+      "colourful polka-dot pattern",
+      "Size M",
+      "front-tie detail",
+      "cropped silhouette"
+    ],
+    "reviews": []
+  },
+  {
+    "id": "20",
+    "title": "Vintage Dress",
+    "description": "An elegant vintage white dress featuring a refined silhouette and timeless feminine appeal. Paired with delicate accessories and classic heels, this piece captures effortless sophistication and the glamour of a bygone era.",
+    "price": 1500,
+    "discountedPrice": 1500,
+    "image": {
+      "url": "/images/women-white-dress.jpg",
+      "alt": "Woman wearing a white dress"
+    },
+    "rating": 0,
+    "tags": [
+      "women",
+      "dress",
+      "vintage",
+      "white",
+      "elegant fitted silhouette",
+      "Size M",
+      "timeless feminine style"
+    ],
+    "reviews": []
+  },
+  {
+    "id": "21",
+    "title": "Vintage Dress",
+    "description": "A charming vintage dress featuring a colourful floral pattern and a classic sleeveless design. Its relaxed silhouette and playful colours create a fresh, feminine look inspired by timeless retro fashion.",
+    "price": 1500,
+    "discountedPrice": 1500,
+    "image": {
+      "url": "/images/color-dress.jpg",
+      "alt": "Woman wearing a colourful dress"
+    },
+    "rating": 0,
+    "tags": [
+      "women",
+      "dress",
+      "vintage",
+      "sleeveless",
+      "colourful floral pattern",
+      "Size M",
+      "relaxed feminine silhouette"
+    ],
+    "reviews": []
+  },
+  {
+    "id": "22",
+    "title": "Vintage Dress",
+    "description": "A beautiful vintage dress featuring a vibrant coral-red colour and delicate traditional embroidery. Its flowing fabric and elegant draping create a sophisticated look with a distinctive cultural influence.",
+    "price": 1500,
+    "discountedPrice": 1500,
+    "image": {
+      "url": "/images/asian-dress.jpg",
+      "alt": "Woman wearing a colourful dress"
+    },
+    "rating": 0,
+    "tags": [
+      "women",
+      "dress",
+      "vintage",
+      "Asian-inspired",
+      "coral-red",
+      "traditional embroidery",
+      "Size M",
+      "relaxed feminine silhouette"
+    ],
+    "reviews": []
+  },
+  {
+    "id": "23",
+    "title": "Vintage Denim",
+    "description": "A timeless vintage denim look featuring classic dark jeans paired with a relaxed jacket and a statement green scarf. Inspired by retro street style, this outfit combines effortless attitude with authentic vintage character.",
+    "price": 1500,
+    "discountedPrice": 1500,
+    "image": {
+      "url": "/images/vintage-denim.jpg",
+      "alt": "Woman wearing a vintage denim outfit"
+    },
+    "rating": 0,
+    "tags": [
+      "women",
+      "denim",
+      "vintage",
+      "dark denim jeans",
+      "relaxed jacket",
+      "green scarf",
+      "casual styling",
+      "Size 38",
+      "retro street style"
+    ],
+    "reviews": []
+  },
+  {
+    "id": "24",
+    "title": "Vintage Sunglasses",
+    "description": "A glamorous vintage accessory featuring distinctive white cat-eye sunglasses with a bold retro frame. Paired with a patterned silk scarf and elegant details, this look captures the sophistication of classic vintage fashion.",
+    "price": 1500,
+    "discountedPrice": 1500,
+    "image": {
+      "url": "/images/white-sunglasses.jpg",
+      "alt": "Woman wearing white sunglasses"
+    },
+    "rating": 0,
+    "tags": [
+      "women",
+      "sunglasses",
+      "vintage",
+      "cat-eye",
+      "white statement frame",
+      "oversized shape",
+      "Size 38",
+      "retro style"
+    ],
+    "reviews": []
+  }
+]
