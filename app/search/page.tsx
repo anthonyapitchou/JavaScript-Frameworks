@@ -13,6 +13,7 @@ type SearchProduct = {
   id: string;
   title: string;
   price: number;
+  discountedPrice?: number;
   image: {
     url: string;
     alt: string;
@@ -79,7 +80,8 @@ export default function SearchPage() {
   const apiItems: SearchProduct[] = apiProducts.map((product) => ({
     id: product.id,
     title: product.title,
-    price: product.discountedPrice,
+    price: product.price,
+    discountedPrice: product.discountedPrice,
     image: product.image,
     tags: product.tags,
     source: "api",
@@ -183,36 +185,71 @@ export default function SearchPage() {
       {/* Product grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8 sm:gap-6">
 
-        {filteredProducts.map((product) => (
-          <Link
-            key={`${product.source}-${product.id}`}
-            href={
-              product.source === "local"
-                ? `/product/${product.id}`
-                : `/api-product/${product.id}`
-            }
-            className="block min-w-0"
-          >
-            <Image
-              src={product.image.url}
-              alt={product.image.alt}
-              width={500}
-              height={650}
-              className="w-full aspect-3/4 object-cover hover:scale-105 transition-transform duration-300"
-            />
+        {filteredProducts.map((product) => {
+          const hasDiscount =
+            product.source === "api" &&
+            product.discountedPrice !== undefined &&
+            product.discountedPrice < product.price;
 
-            {/* Product Information */}
-            <div className="flex flex-col gap-1 mt-3">
-              <p className="text-sm sm:text-base leading-snug">
-                {product.title}
-              </p>
+          const discountPercentage = hasDiscount
+            ? Math.round(
+                ((product.price - product.discountedPrice!) / product.price) * 100
+              )
+            : 0;
 
-              <p className="text-sm sm:text-base text-gray-700">
-                {product.price} SEK
-              </p>
-            </div>
-          </Link>
-        ))}
+          return (
+            <Link
+              key={`${product.source}-${product.id}`}
+              href={
+                product.source === "local"
+                  ? `/product/${product.id}`
+                  : `/api-product/${product.id}`
+              }
+              className="block min-w-0"
+            >
+              <div className="relative overflow-hidden">
+                <Image
+                  src={product.image.url}
+                  alt={product.image.alt}
+                  width={500}
+                  height={650}
+                  className="w-full aspect-3/4 object-cover hover:scale-105 transition-transform duration-300"
+                />
+
+                {hasDiscount && (
+                  <span className="absolute top-3 left-3 bg-black text-white text-xs px-3 py-2">
+                    -{discountPercentage}%
+                  </span>
+                )}
+              </div>
+
+              {/* Product Information */}
+              <div className="flex flex-col gap-1 mt-3">
+                <p className="text-sm sm:text-base leading-snug">
+                  {product.title}
+                </p>
+
+                <div className="flex flex-wrap items-center gap-2 text-sm sm:text-base">
+                  {hasDiscount ? (
+                    <>
+                      <span className="text-gray-400 line-through">
+                        {product.price.toFixed(2)} SEK
+                      </span>
+
+                      <span className="text-gray-700">
+                        {product.discountedPrice!.toFixed(2)} SEK
+                      </span>
+                    </>
+                  ) : (
+                    <span className="text-gray-700">
+                      {product.price} SEK
+                    </span>
+                  )}
+                </div>
+              </div>
+            </Link>
+          );
+        })}
 
       </div>
 
