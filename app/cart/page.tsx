@@ -1,12 +1,14 @@
 
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useCart } from "./CartContext";
 
 export default function CartPage() {
   const { cart, removeFromCart, updateQuantity } = useCart();
+  const [showToast, setShowToast] = useState(false);
 
   const total = cart.reduce(
     (sum, item) => sum + item.price * item.quantity,
@@ -17,8 +19,27 @@ export default function CartPage() {
     window.location.href = "/checkout";
   }
 
+  function handleRemove(id: string, source: "local" | "api") {
+    removeFromCart(id, source);
+    setShowToast(true);
+
+    setTimeout(() => {
+      setShowToast(false);
+    }, 3000);
+  }
+
   return (
     <main className="min-h-screen bg-white text-black px-5 sm:px-8 py-8 sm:py-12">
+
+      {showToast && (
+        <div
+          role="status"
+          aria-live="polite"
+          className="fixed top-5 right-5 z-50 bg-white text-black border border-gray-200 shadow-lg px-6 py-4"
+        >
+          Product removed from cart!
+        </div>
+      )}
 
       <h1 className="text-3xl sm:text-4xl font-normal mb-8 sm:mb-10">
         Your Shopping Bag
@@ -40,16 +61,12 @@ export default function CartPage() {
       ) : (
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
 
-          {/* Cart Products */}
           <div className="lg:col-span-2 space-y-6 sm:space-y-8">
-
             {cart.map((item) => (
               <div
                 key={`${item.source}-${item.id}`}
                 className="flex gap-4 sm:gap-6 border-b pb-6 sm:pb-8 min-w-0"
               >
-
-                {/* Product Image */}
                 <Image
                   src={item.image.url}
                   alt={item.image.alt}
@@ -58,9 +75,7 @@ export default function CartPage() {
                   className="w-28 h-36 sm:w-32 sm:h-40 object-cover shrink-0"
                 />
 
-                {/* Product Information */}
                 <div className="flex flex-col justify-between flex-1 min-w-0 gap-4">
-
                   <div>
                     <h2 className="text-base sm:text-lg font-medium leading-snug">
                       {item.title}
@@ -71,16 +86,10 @@ export default function CartPage() {
                     </p>
                   </div>
 
-                  {/* Quantity and Remove */}
                   <div className="flex flex-wrap items-center gap-3 sm:gap-4">
-
                     <button
                       onClick={() =>
-                        updateQuantity(
-                          item.id,
-                          item.source,
-                          item.quantity - 1
-                        )
+                        updateQuantity(item.id, item.source, item.quantity - 1)
                       }
                       disabled={item.quantity === 1}
                       className="border px-3 py-1 disabled:opacity-30"
@@ -95,11 +104,7 @@ export default function CartPage() {
 
                     <button
                       onClick={() =>
-                        updateQuantity(
-                          item.id,
-                          item.source,
-                          item.quantity + 1
-                        )
+                        updateQuantity(item.id, item.source, item.quantity + 1)
                       }
                       className="border px-3 py-1"
                       aria-label="Increase quantity"
@@ -108,23 +113,18 @@ export default function CartPage() {
                     </button>
 
                     <button
-                      onClick={() =>
-                        removeFromCart(item.id, item.source)
-                      }
+                      onClick={() => handleRemove(item.id, item.source)}
                       className="text-sm underline hover:opacity-50"
                     >
                       Remove
                     </button>
-
                   </div>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* Order Summary */}
           <aside className="border p-5 sm:p-6 h-fit">
-
             <h2 className="text-lg sm:text-xl font-medium mb-6">
               Order Summary
             </h2>
@@ -150,7 +150,6 @@ export default function CartPage() {
             >
               Continue Shopping
             </Link>
-
           </aside>
         </div>
       )}
