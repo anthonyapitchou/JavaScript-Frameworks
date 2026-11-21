@@ -18,8 +18,8 @@
     "id": "2",
     "title": "Vintage Suit",
     "description": "A timeless vintage suit featuring a refined double-breasted jacket, a textured dark fabric and a tailored silhouette. Paired with a classic shirt and tie, this elegant piece brings a touch of sophistication and character to any wardrobe.",
-    "price": 3200,
-    "discountedPrice": 3200,
+    "price": 3000,
+    "discountedPrice": 3000,
     "image": {
       "url": "/images/mohamad-khosravi.jpg",
       "alt": "Man wearing a vintage suit"
@@ -41,8 +41,8 @@
     "id": "3",
     "title": "Vintage Blue Suit",
     "description": "A sophisticated vintage blue suit featuring a tailored three-piece design with a matching jacket, waistcoat and trousers. Its refined silhouette, classic details and timeless blue tone make it a distinctive piece for any elegant wardrobe.",
-    "price": 3200,
-    "discountedPrice": 3200,
+    "price": 3000,
+    "discountedPrice": 3000,
     "image": {
       "url": "/images/mohamad.jpg",
       "alt": "Man wearing a vintage blue suit"
