@@ -1,8 +1,9 @@
-
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getProductById } from "../../lib/api";
 import AddToCartButton from "@/components/AddToCartButton";
+
+export const instant = false;
 
 export default async function ApiProductPage({
   params,
