@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getProductById } from "../../lib/api";
+import AddToCartButton from "@/components/AddToCartButton";
 
 export default async function ApiProductPage({
   params,
@@ -20,12 +21,14 @@ export default async function ApiProductPage({
 
   return (
     <main className="min-h-screen bg-white text-black">
-      <section className="px-8 py-10">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <section className="px-5 sm:px-8 py-8 sm:py-10">
 
-          {/* Product image */}
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+
+          {/* Product Image */}
+          <div className="relative overflow-hidden">
+
             <Image
               src={product.image.url}
               alt={product.image.alt}
@@ -33,16 +36,24 @@ export default async function ApiProductPage({
               height={850}
               className="w-full aspect-3/4 object-cover object-top"
             />
+
+            {/* Product Title on Image */}
+            <div className="absolute bottom-5 left-5">
+              <h1 className="text-3xl sm:text-5xl font-normal text-white drop-shadow-lg">
+                {product.title}
+              </h1>
+            </div>
+
           </div>
 
-          {/* Product information */}
-          <div className="flex flex-col gap-8">
+          {/* Product Information */}
+          <div className="flex flex-col gap-6 md:gap-8">
 
-            <h1 className="text-3xl font-semibold">
+            <h2 className="text-2xl sm:text-3xl font-semibold">
               {product.title}
-            </h1>
+            </h2>
 
-            <p className="text-xl">
+            <p className="text-lg sm:text-xl">
               {product.discountedPrice} SEK
             </p>
 
@@ -50,17 +61,19 @@ export default async function ApiProductPage({
               One of a kind
             </p>
 
-            <div className="mt-6">
-              <h2 className="text-lg font-medium mb-4">
+            {/* Description */}
+            <div className="mt-2 sm:mt-6">
+              <h2 className="text-lg font-medium mb-3">
                 Description
               </h2>
 
-              <p className="text-base leading-loose">
+              <p className="text-sm sm:text-base leading-loose">
                 {product.description}
               </p>
             </div>
 
-            <div className="mt-6">
+            {/* Product Details */}
+            <div className="mt-2 sm:mt-6">
               <h2 className="text-lg font-medium mb-4">
                 Product Details
               </h2>
@@ -72,9 +85,8 @@ export default async function ApiProductPage({
               </ul>
             </div>
 
-            <button className="w-full bg-blue-500 text-white py-4 mt-10 hover:bg-blue-600 transition-colors duration-300">
-              ADD TO CART
-            </button>
+            {/* Add to Cart */}
+            <AddToCartButton product={product} source="api" />
 
           </div>
         </div>

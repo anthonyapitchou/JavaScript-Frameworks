@@ -1,9 +1,10 @@
+
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import products from "../../data/products.json";
-import { useCart } from "../../cart/CartContext";
 import AddToCartButton from "@/components/AddToCartButton";
-// Tell Next.js which product IDs exist (ids must be strings)
+
+// Tell Next.js which product IDs exist
 export function generateStaticParams() {
   return products.map((product) => ({
     id: String(product.id),
@@ -22,64 +23,78 @@ export default async function ProductPage({
 }) {
   const { id } = await params;
 
-  // Find the product matching the id in the URL
   const product = products.find((p) => String(p.id) === id);
 
-  // Show the 404 page if no product matches
   if (!product) notFound();
 
-  // First tag is the collection (men/women), second tag is the product type
   const [collection, type] = product.tags;
 
-  // Detail lines are the tags that start with a capital letter
   const details = product.tags.filter((tag) => /^[A-Z]/.test(tag));
 
   return (
     <main className="min-h-screen bg-white text-black">
-      {/* Product Detail */}
-      <section className="px-8 py-10">
-        <div className="mb-8">
-          <h2 className="text-5xl font-normal">
-            {capitalize(collection)} Collection
-          </h2>
-          <p className="text-lg mt-3">{capitalize(type)}</p>
-        </div>
+
+      <section className="px-5 sm:px-8 py-8 sm:py-10">
 
         {/* Product Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {/* Left - Product Gallery */}
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+
+          {/* Product Image */}
+          <div className="relative overflow-hidden">
+
             <Image
               src={product.image.url}
               alt={product.image.alt}
               width={500}
               height={850}
-              className="w-full aspect-3/4 object-cover object-top transition-transform duration-300"
+              className="w-full aspect-3/4 object-cover object-top"
             />
+
+            {/* Collection Title on Image */}
+            <div className="absolute bottom-5 left-5">
+              <h1 className="text-3xl sm:text-5xl font-normal text-white drop-shadow-lg">
+                {capitalize(collection)} Collection
+              </h1>
+              <p className="text-base sm:text-lg text-white drop-shadow-lg mt-1">
+                {capitalize(type)}
+              </p>
+            </div>
+
           </div>
 
-          {/* Right - Product Information */}
-          <div className="flex flex-col gap-8">
-            {/* Product Name & Price */}
-            <h2 className="text-3xl font-semibold">{product.title}</h2>
+          {/* Product Information */}
+          <div className="flex flex-col gap-6 md:gap-8">
 
-            <p className="text-xl">{product.price} SEK</p>
+            <h2 className="text-2xl sm:text-3xl font-semibold">
+              {product.title}
+            </h2>
 
-            {/* Availability */}
+            <p className="text-lg sm:text-xl">
+              {product.price} SEK
+            </p>
+
             <p className="text-sm text-gray-600">
               One of a kind · Only one size available
             </p>
 
             {/* Description */}
-            <div className="mt-6">
-              <h3 className="text-lg font-medium mb-4">Description</h3>
-              <p className="text-base leading-loose">{product.description}</p>
+            <div className="mt-2 sm:mt-6">
+              <h3 className="text-lg font-medium mb-3">
+                Description
+              </h3>
+
+              <p className="text-sm sm:text-base leading-loose">
+                {product.description}
+              </p>
             </div>
 
-            {/* Product Details (hidden when the product has none) */}
+            {/* Product Details */}
             {details.length > 0 && (
-              <div className="mt-6">
-                <h3 className="text-lg font-medium mb-4">Product Details</h3>
+              <div className="mt-2 sm:mt-6">
+                <h3 className="text-lg font-medium mb-4">
+                  Product Details
+                </h3>
+
                 <ul className="text-sm text-gray-600 space-y-3">
                   {details.map((detail) => (
                     <li key={detail}>{detail}</li>
@@ -89,7 +104,8 @@ export default async function ProductPage({
             )}
 
             {/* Add to Cart */}
-           <AddToCartButton product={product} />
+            <AddToCartButton product={product} source="local" />
+
           </div>
         </div>
       </section>

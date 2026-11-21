@@ -1,40 +1,81 @@
-# JavaScript-Frameworks
-Course assignment for Noroff's JavaScript Frameworks course. Building a responsive online shop using Next.js, React, and TypeScript, with API integration, product search, shopping cart, and checkout functionality.
-=======
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vintage Studio
+
+A responsive online fashion store built as part of the JavaScript Frameworks course at Noroff.
+
+Vintage Studio is an online shop where users can browse products, search for items, view product details, add products to a shopping cart, and complete a checkout.
+
+## Features
+
+- Browse men's and women's collections
+- View product details, descriptions, prices, ratings, and reviews
+- Search for products
+- Add and remove products from the shopping cart
+- Update product quantities
+- View the cart total
+- Complete the checkout process
+- Receive an order confirmation
+- Contact form
+- Responsive layout for desktop and mobile
+
+## Technologies
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Noroff Online Shop API
+- Local Storage
 
 ## Getting Started
 
-First, run the development server:
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/anthonyapitchou/JavaScript-Frameworks.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd JavaScript-Frameworks
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+### Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## API
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Product data is retrieved from the Noroff Online Shop API.
 
-## Learn More
+- `GET /online-shop` – Retrieve all products
+- `GET /online-shop/{id}` – Retrieve a single product
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `app/` – Application pages and routes
+- `components/` – Reusable React components
+- `app/cart/` – Shopping cart context and functionality
+- `app/lib/` – API helper functions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+The project is intended to be deployed using a platform that supports Next.js, such as Vercel.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
->>>>>>> ec82283 (Initial commit from Create Next App)
+Anthony Apicella
+
+Developed as part of the JavaScript Frameworks course at Noroff.

@@ -86,9 +86,11 @@ export default function SearchPage() {
   }));
 
   const selectedProducts =
-    activeTab === "products" ? apiItems : localItems.filter((product) =>
-      product.tags.includes(activeTab)
-    );
+    activeTab === "products"
+      ? apiItems
+      : localItems.filter((product) =>
+          product.tags.includes(activeTab)
+        );
 
   const filteredProducts = selectedProducts.filter((product) => {
     const matchesSearch = product.title
@@ -112,9 +114,9 @@ export default function SearchPage() {
   };
 
   return (
-    <main className="min-h-screen bg-white text-black px-8 py-12">
+    <main className="min-h-screen bg-white text-black px-5 sm:px-8 py-8 sm:py-12">
 
-      <h1 className="text-4xl font-medium mb-8">
+      <h1 className="text-3xl sm:text-4xl font-medium mb-8">
         Search
       </h1>
 
@@ -124,7 +126,7 @@ export default function SearchPage() {
         placeholder="Search products..."
         value={search}
         onChange={(event) => setSearch(event.target.value)}
-        className="w-full border border-gray-300 px-4 py-3 mb-6 outline-none focus:border-black"
+        className="w-full border border-gray-300 px-4 py-3 mb-6 outline-none focus:border-black text-sm sm:text-base"
       />
 
       {/* Main navigation */}
@@ -134,7 +136,7 @@ export default function SearchPage() {
             key={tab}
             type="button"
             onClick={() => changeTab(tab)}
-            className={`px-6 py-2 text-sm border transition-colors ${
+            className={`px-6 py-2 text-sm sm:text-base border transition-colors ${
               activeTab === tab
                 ? "bg-black text-white border-black"
                 : "bg-white text-black border-gray-300 hover:bg-gray-100"
@@ -152,7 +154,7 @@ export default function SearchPage() {
             key={category}
             type="button"
             onClick={() => setSelectedCategory(category)}
-            className={`px-4 py-2 text-xs border transition-colors ${
+            className={`px-4 py-2 text-xs sm:text-sm border transition-colors ${
               selectedCategory === category
                 ? "bg-gray-200 text-black border-black"
                 : "bg-white text-gray-700 border-gray-300 hover:border-black"
@@ -165,21 +167,22 @@ export default function SearchPage() {
 
       {/* Loading and error messages */}
       {loading && activeTab === "products" && (
-        <p>Loading products...</p>
+        <p className="text-sm sm:text-base">Loading products...</p>
       )}
 
       {error && activeTab === "products" && (
-        <p className="text-red-600 mb-6">
+        <p className="text-sm sm:text-base text-red-600 mb-6">
           Could not load API products.
         </p>
       )}
 
       {!loading && filteredProducts.length === 0 && (
-        <p className="mb-6">No products found.</p>
+        <p className="text-sm sm:text-base mb-6">No products found.</p>
       )}
 
       {/* Product grid */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8 sm:gap-6">
+
         {filteredProducts.map((product) => (
           <Link
             key={`${product.source}-${product.id}`}
@@ -188,7 +191,7 @@ export default function SearchPage() {
                 ? `/product/${product.id}`
                 : `/api-product/${product.id}`
             }
-            className="block"
+            className="block min-w-0"
           >
             <Image
               src={product.image.url}
@@ -198,17 +201,21 @@ export default function SearchPage() {
               className="w-full aspect-3/4 object-cover hover:scale-105 transition-transform duration-300"
             />
 
-            <div className="flex justify-between gap-2 mt-3">
-              <p className="text-sm">{product.title}</p>
-              <p className="text-sm whitespace-nowrap">
+            {/* Product Information */}
+            <div className="flex flex-col gap-1 mt-3">
+              <p className="text-sm sm:text-base leading-snug">
+                {product.title}
+              </p>
+
+              <p className="text-sm sm:text-base text-gray-700">
                 {product.price} SEK
               </p>
             </div>
           </Link>
         ))}
+
       </div>
 
     </main>
   );
 }
-
