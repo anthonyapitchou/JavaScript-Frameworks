@@ -14,6 +14,7 @@ type SearchProduct = {
   title: string;
   price: number;
   discountedPrice?: number;
+  rating?: number;
   image: {
     url: string;
     alt: string;
@@ -82,6 +83,7 @@ export default function SearchPage() {
     title: product.title,
     price: product.price,
     discountedPrice: product.discountedPrice,
+    rating: product.rating,
     image: product.image,
     tags: product.tags,
     source: "api",
@@ -228,6 +230,16 @@ export default function SearchPage() {
                 <p className="text-sm sm:text-base leading-snug">
                   {product.title}
                 </p>
+
+                {product.source === "api" && product.rating !== undefined && (
+                  <p className="text-sm text-yellow-600">
+                    {"★".repeat(Math.round(product.rating))}
+                    {"☆".repeat(5 - Math.round(product.rating))}
+                    <span className="text-gray-500 ml-2">
+                      {product.rating.toFixed(1)}/5
+                    </span>
+                  </p>
+                )}
 
                 <div className="flex flex-wrap items-center gap-2 text-sm sm:text-base">
                   {hasDiscount ? (
