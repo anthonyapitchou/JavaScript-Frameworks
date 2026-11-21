@@ -1,21 +1,26 @@
 # Vintage Studio
 
-A responsive online fashion store built as part of the JavaScript Frameworks course at Noroff.
+A responsive online fashion store developed as part of the JavaScript Frameworks course at Noroff.
 
-Vintage Studio is an online shop where users can browse products, search for items, view product details, add products to a shopping cart, and complete a checkout.
+Vintage Studio allows users to browse clothing collections, search for products, view product details, manage a shopping cart, and complete the checkout process.
+
+## Live Demo
+
+[Visit Vintage Studio](https://java-script-frameworks-eqe3.vercel.app/)
 
 ## Features
 
-- Browse men's and women's collections
-- View product details, descriptions, prices, ratings, and reviews
-- Search for products
-- Add and remove products from the shopping cart
-- Update product quantities
-- View the cart total
-- Complete the checkout process
-- Receive an order confirmation
-- Contact form
-- Responsive layout for desktop and mobile
+- Browse men's and women's collections.
+- View product details, descriptions, prices, and images.
+- Retrieve products from the Noroff Online Shop API.
+- Search for products.
+- Add products to the shopping cart.
+- Update product quantities and remove items.
+- View the total price of the cart.
+- Complete the checkout process.
+- Receive an order confirmation.
+- Contact form with input validation.
+- Responsive design for desktop, tablet, and mobile.
 
 ## Technologies
 
@@ -24,9 +29,15 @@ Vintage Studio is an online shop where users can browse products, search for ite
 - TypeScript
 - Tailwind CSS
 - Noroff Online Shop API
+- React Context API
 - Local Storage
 
 ## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
 
 ### Installation
 
@@ -36,7 +47,7 @@ Clone the repository:
 git clone https://github.com/anthonyapitchou/JavaScript-Frameworks.git
 ```
 
-Navigate to the project folder:
+Navigate to the project directory:
 
 ```bash
 cd JavaScript-Frameworks
@@ -56,23 +67,26 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## API
+## API Integration
 
 Product data is retrieved from the Noroff Online Shop API.
 
-- `GET /online-shop` – Retrieve all products
-- `GET /online-shop/{id}` – Retrieve a single product
+- `GET /online-shop` – Retrieves all products.
+- `GET /online-shop/{id}` – Retrieves a single product by ID.
 
 ## Project Structure
 
-- `app/` – Application pages and routes
-- `components/` – Reusable React components
-- `app/cart/` – Shopping cart context and functionality
-- `app/lib/` – API helper functions
+- `app/` – Application pages and routes.
+- `app/cart/` – Shopping cart context and functionality.
+- `app/lib/` – API helper functions.
+- `components/` – Reusable React components.
+- `app/data/` – Local product data.
 
 ## Deployment
 
-The project is intended to be deployed using a platform that supports Next.js, such as Vercel.
+The application is deployed using Vercel.
+
+[https://java-script-frameworks-eqe3.vercel.app/](https://java-script-frameworks-eqe3.vercel.app/)
 
 ## Author
 

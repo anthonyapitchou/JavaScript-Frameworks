@@ -318,8 +318,8 @@
     "id": "15",
     "title": "Vintage Jacket",
     "description": "A statement vintage jacket featuring a delicate cream fabric decorated with dark floral lace, ornamental details and distinctive patches. Its unique combination of textures and patterns creates an elegant yet unconventional vintage look.",
-    "price": 3500,
-    "discountedPrice": 3500,
+    "price": 2500,
+    "discountedPrice": 2500,
     "image": {
       "url": "/images/adrian.jpg",
       "alt": "Woman wearing a vintage jacket"
