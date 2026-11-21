@@ -41,7 +41,9 @@ export async function getProducts(): Promise<Product[]> {
 
 
 export async function getProductById(id: string): Promise<Product> {
-  const response = await fetch(`${API_URL}/${id}`);
+ const response = await fetch(`${API_URL}/${id}`, {
+  cache: "force-cache",
+});
 
   if (!response.ok) {
     throw new Error("Failed to fetch product");
