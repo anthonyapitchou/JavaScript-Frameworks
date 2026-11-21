@@ -1,26 +1,26 @@
 # Vintage Studio
 
-A responsive online fashion store developed as part of the JavaScript Frameworks course at Noroff.
+Vintage Studio is a responsive online fashion store developed as part of the JavaScript Frameworks course at Noroff.
 
-Vintage Studio allows users to browse clothing collections, search for products, view product details, manage a shopping cart, and complete the checkout process.
+The project is built with Next.js, React and TypeScript. It combines locally stored products with product data fetched from the Noroff Online Shop API.
 
 ## Live Demo
 
-[Visit Vintage Studio](https://java-script-frameworks-eqe3.vercel.app/)
+[View Vintage Studio](https://java-script-frameworks-eqe3.vercel.app/)
 
 ## Features
 
-- Browse men's and women's collections.
-- View product details, descriptions, prices, and images.
-- Retrieve products from the Noroff Online Shop API.
-- Search for products.
-- Add products to the shopping cart.
-- Update product quantities and remove items.
-- View the total price of the cart.
-- Complete the checkout process.
-- Receive an order confirmation.
-- Contact form with input validation.
-- Responsive design for desktop, tablet, and mobile.
+- **Product Catalogue:** Browse fashion products from local data and the Noroff API.
+- **Product Details:** View product images, descriptions, prices, ratings, reviews and tags when available.
+- **Discounts:** Display original prices, discounted prices and discount percentage labels.
+- **Search:** Search and filter products dynamically.
+- **Shopping Cart:** Add and remove products, update quantities and calculate the total price.
+- **Cart Persistence:** Cart contents are saved in localStorage.
+- **Notifications:** Toast messages confirm when products are added to or removed from the cart.
+- **Checkout:** Complete the checkout flow and receive an order confirmation.
+- **Contact Form:** Client-side form validation with error messages for invalid input.
+- **Responsive Design:** Layout adapted for desktop, tablet and mobile screens.
+- **Loading and Error States:** Feedback when product data is loading or cannot be retrieved.
 
 ## Technologies
 
@@ -29,8 +29,8 @@ Vintage Studio allows users to browse clothing collections, search for products,
 - TypeScript
 - Tailwind CSS
 - Noroff Online Shop API
-- React Context API
-- Local Storage
+- localStorage
+- Vercel
 
 ## Getting Started
 
@@ -59,7 +59,7 @@ Install dependencies:
 npm install
 ```
 
-### Run the development server
+Start the development server:
 
 ```bash
 npm run dev
@@ -67,29 +67,32 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+## Available Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start the development server |
+| `npm run build` | Build the application |
+| `npm run start` | Start the production server |
+| `npm run lint` | Run ESLint |
+
 ## API Integration
 
-Product data is retrieved from the Noroff Online Shop API.
+The project uses the Noroff Online Shop API to retrieve product information.
 
-- `GET /online-shop` – Retrieves all products.
-- `GET /online-shop/{id}` – Retrieves a single product by ID.
+- `GET /online-shop` – Retrieve products.
+- `GET /online-shop/{id}` – Retrieve an individual product.
 
-## Project Structure
-
-- `app/` – Application pages and routes.
-- `app/cart/` – Shopping cart context and functionality.
-- `app/lib/` – API helper functions.
-- `components/` – Reusable React components.
-- `app/data/` – Local product data.
+Local product data is also used alongside API products.
 
 ## Deployment
 
 The application is deployed using Vercel.
 
-[https://java-script-frameworks-eqe3.vercel.app/](https://java-script-frameworks-eqe3.vercel.app/)
+[Visit the live website](https://java-script-frameworks-eqe3.vercel.app/)
 
 ## Author
 
 Anthony Apicella
 
-Developed as part of the JavaScript Frameworks course at Noroff.
+Noroff – JavaScript Frameworks Course
